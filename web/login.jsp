@@ -1,8 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : 03-mar-2018, 20:24:16
-    Author     : DarkGirl
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

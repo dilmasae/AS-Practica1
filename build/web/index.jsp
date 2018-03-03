@@ -15,41 +15,8 @@
   </head>
   <body>
       
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
-        <div class="container">
-            
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <%@include file="nav.jsp" %>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-
-              </ul>
-                
-                <div class="my-2 my-lg-0 mr-3">  
-                  <a href="#">
-                      <i class="fas fa-shopping-cart"></i>
-                  </a>
-              </div>
-              <div class="my-2 my-lg-0">  
-                  <a href="#">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">login</button>
-                  </a>
-              </div>
-            </div>
-        
-        </div>
-        
-    </nav>
-      
-
-          
         <section class="container my-carousel">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -79,48 +46,40 @@
           <div class="row">
               
               <div class="col-sm-4 mt-2">
-                  <article class="card">
-                    <img class="card-img-top" src="http://www.lorempixel.com/300/300" alt="producto 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> 5€ </a>
-                    </div>
-                  </article>
+                  <jsp:include page='product.jsp'>
+                    <jsp:param name="img" value="http://www.lorempixel.com/300/300"/>
+                    <jsp:param name="title" value="Card title 1"/>
+                    <jsp:param name="text" value="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <jsp:param name="price" value="5"/>
+                  </jsp:include>
               </div>
             
               
               <div class="col-sm-4 mt-2">
-                  <article class="card">
-                    <img class="card-img-top" src="http://www.lorempixel.com/300/300" alt="producto 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> 5€ </a>
-                    </div>
-                  </article>
+                                   <jsp:include page='product.jsp'>
+                    <jsp:param name="img" value="http://www.lorempixel.com/300/300"/>
+                    <jsp:param name="title" value="Card title 2"/>
+                    <jsp:param name="text" value="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <jsp:param name="price" value="10"/>
+                  </jsp:include>
               </div>
               
               <div class="col-sm-4 mt-2">
-                  <article class="card">
-                    <img class="card-img-top" src="http://www.lorempixel.com/300/300" alt="producto 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> 5€ </a>
-                    </div>
-                  </article>
+                                    <jsp:include page='product.jsp'>
+                    <jsp:param name="img" value="http://www.lorempixel.com/300/300"/>
+                    <jsp:param name="title" value="Card title 3"/>
+                    <jsp:param name="text" value="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <jsp:param name="price" value="45"/>
+                  </jsp:include>
               </div>
               
               <div class="col-sm-4 mt-2">
-                  <article class="card">
-                    <img class="card-img-top" src="http://www.lorempixel.com/300/300" alt="producto 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> 6€</a>
-                    </div>
-                  </article>
+                                    <jsp:include page='product.jsp'>
+                    <jsp:param name="img" value="http://www.lorempixel.com/300/300"/>
+                    <jsp:param name="title" value="Card title"/>
+                    <jsp:param name="text" value="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+                    <jsp:param name="price" value="10"/>
+                  </jsp:include>
               </div>
               
           </div>
@@ -128,11 +87,7 @@
           
       </section>
     
-      <footer class="bg-secondary mt-4">
-          <div class="container text-center text-white p-4">
-              Dilma
-          </div>
-      </footer>
+      <%@include file="footer.jsp" %>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
