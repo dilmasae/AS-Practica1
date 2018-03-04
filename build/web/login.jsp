@@ -15,12 +15,12 @@
                                 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Escribe tu email">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Escribe tu email" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="*****">
+                    <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="*****" required>
                 </div>
                 
                 <button type="submit" class="btn btn-primary w-100">Login</button>

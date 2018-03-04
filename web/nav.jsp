@@ -28,7 +28,7 @@
                     <a href="login.jsp">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">login</button>
                     </a>
-                    <a href="#">
+                    <a href="register.jsp">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">registro</button>
                     </a>
                   <% } else { %>
