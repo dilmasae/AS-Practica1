@@ -14,10 +14,10 @@ public class UnknownCommand extends FrontCommand {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Not Found</title>");            
+            out.println("<title>Página no encontrada</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>404 - Resource not found</h1>");
+            out.println("<h1>404 - Recurso no encontrado</h1>");
             out.println("</body>");
             out.println("</html>");
         } catch (IOException ex) {

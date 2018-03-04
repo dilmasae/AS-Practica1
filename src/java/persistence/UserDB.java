@@ -3,13 +3,16 @@ package persistence;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import model.User;
 
 public class UserDB {
     
     public static int userId = 1;
-    public static List<User> users = new ArrayList<>();
+    public static List<User> users = new ArrayList<>(
+            Arrays.asList(new User("Edilma", "Alvaro", "04/12/1989", "dilmasae@gmail.com", "123"))
+    );
     
     public static int getUniqueId() {
         return userId++;

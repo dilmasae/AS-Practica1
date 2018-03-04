@@ -22,12 +22,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "FrontServlet", urlPatterns = {"/FrontServlet"})
 public class FrontServlet extends HttpServlet {
     
-    public static final String PATH = "frontcontroller";
-    
     private FrontCommand getCommand(HttpServletRequest request) {
         FrontCommand command;
         try {
-            String path = PATH + "." + request.getParameter("command");
+            String path = request.getParameter("command");
             command = (FrontCommand) Class.forName(path).newInstance();
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
             command = new UnknownCommand();

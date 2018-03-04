@@ -28,11 +28,11 @@ public class LoginCommand extends FrontCommand {
              cookieUser.setMaxAge(expireTime);
              
              response.addCookie(cookieUser);
-             redirect("/index.jsp");
+             redirect("index.jsp");
         }
         else {
             request.setAttribute("message", "Credenciales invalidas");
-            redirect("/login.jsp");
+            forward("/login.jsp");
         }
         
     }
