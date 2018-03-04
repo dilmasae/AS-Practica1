@@ -10,11 +10,12 @@
     <div class="card-body">
       <h5 class="card-title"><% out.print(request.getParameter("title")); %></h5>
       <p class="card-text"><% out.print(request.getParameter("text")); %></p>
-      <form action="#" method="POST">
-          <% out.println("<input type='hidden' name='id' value="+id+">"); %>
-          <a href="#" class="btn btn-primary">
-            <i class="fas fa-cart-plus"></i> <% out.print(request.getParameter("price")); %>€ 
-          </a>
+      <form action="FrontServlet" method="POST">
+          <% out.println("<input type='hidden' name='idProducto' value="+id+">"); %>
+          <input hidden="true" name="command" value="cart.AddCartCommand">
+          <button class="btn btn-primary">
+              <i class="fas fa-cart-plus"></i> <% out.print(request.getParameter("price")); %>€ 
+          </button>
       </form>
     </div>
 </article>

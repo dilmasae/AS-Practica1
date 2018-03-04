@@ -17,7 +17,7 @@
             
             <h2>Mi carrito</h2>
             
-            <% for(Map.Entry<Integer, Integer> item : CartDB.cart.entrySet()) { %>
+            <% for(Map.Entry<Integer, Integer> item : CartDB.cart.getCart().entrySet()) { %>
                 
                 <% Product product = ProductDB.getProduct(item.getKey()); %>
             

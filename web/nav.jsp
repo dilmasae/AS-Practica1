@@ -20,7 +20,7 @@
                 <div class="my-2 my-lg-0 mr-3">  
                   <a href="cart.jsp" class="decoration-none">
                       <i class="fas fa-shopping-cart"></i>
-                      <span class="badge badge-light"><%= CartDB.cart.size() %></span>
+                      <span class="badge badge-light"><%= CartDB.cart.getCart().size() %></span>
                   </a>
               </div>
               <div class="my-2 my-lg-0">
