@@ -18,13 +18,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img class="d-block w-100" src="http://via.placeholder.com/1500X500" alt="First slide">
+                      <img class="d-block w-100" src="https://images.unsplash.com/photo-1486064315680-99051c121070?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=493a321d49a7bd6e16797204dea30902&auto=format&fit=crop&w=1500&q=80" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="http://via.placeholder.com/1500X500" alt="Second slide">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1493259606967-571afaef3d81?ixlib=rb-0.3.5&s=1af272f01a0af41e96fd5cf665c8569a&auto=format&fit=crop&w=1500&q=80" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="http://via.placeholder.com/1500X500" alt="Third slide">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1511032881274-ce38e9144ea6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4625836df223357718cfc52a138a365&auto=format&fit=crop&w=1500&q=80" alt="Third slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
