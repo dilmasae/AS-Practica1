@@ -51,6 +51,7 @@
               
               <div class="col-sm-4 mt-2">
                   <jsp:include page='product.jsp'>
+                        <jsp:param name="id" value="<%= product.getId() %>"/>
                         <jsp:param name="img" value="<%= product.getImg() %>"/>
                         <jsp:param name="title" value="<%= product.getTitle() %>"/>
                         <jsp:param name="text" value="<%= product.getText() %>"/>

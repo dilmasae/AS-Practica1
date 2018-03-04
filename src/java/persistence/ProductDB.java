@@ -9,10 +9,18 @@ import model.Product;
 
 public class ProductDB {
     
+    public static int productId = 1;
     public static Cart cart = new Cart();
+    public static List<Product> products = new ArrayList<>();
+    public static boolean isReady = false;
+    
+    public static int getUniqueId() {
+        return productId++;
+    }
     
     public static List<Product> getProducts() {
-        List<Product> products = new ArrayList<>();
+        
+        if(isReady) return products;
         
         Random rand = new Random();
         
@@ -20,7 +28,8 @@ public class ProductDB {
             products.add(new Product("http://via.placeholder.com/300X300", "Titulo " + i, "Texto "+ i, rand.nextInt(50) + 1));
         }
         
-        return products;
+        isReady = true;
+        return ProductDB.products;
     }
     
 }

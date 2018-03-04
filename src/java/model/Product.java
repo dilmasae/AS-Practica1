@@ -5,18 +5,26 @@
  */
 package model;
 
+import persistence.ProductDB;
+
 public class Product {
     
+    private final int id;
     private String img;
     private String title;
     private String text;
     private int price;
 
     public Product(String img, String title, String text, int price) {
+        this.id = ProductDB.getUniqueId();
         this.img = img;
         this.title = title;
         this.text = text;
         this.price = price;
+    }
+    
+    public int getId() {
+        return id;
     }
 
     public String getImg() {

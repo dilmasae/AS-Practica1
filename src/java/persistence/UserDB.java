@@ -8,11 +8,11 @@ import model.User;
 
 public class UserDB {
     
-    public static int id = 1;
+    public static int userId = 1;
     public static List<User> users = new ArrayList<>();
     
     public static int getUniqueId() {
-        return id++;
+        return userId++;
     }
     
     public static void add(User user) {
