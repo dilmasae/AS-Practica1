@@ -8,7 +8,7 @@
 <html lang="es">
   <head>
     <%@include file="head.jsp" %>
-    <title>Dilma</title>
+    <title>Venta de manualidades</title>
   </head>
   <body>
       

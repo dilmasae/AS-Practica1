@@ -5,7 +5,7 @@
 <html>
     <head>
         <%@include file="head.jsp" %>
-        <title>JSP Page</title>
+        <title>Registro</title>
     </head>
     <body>
         
