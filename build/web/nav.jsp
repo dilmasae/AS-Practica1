@@ -17,7 +17,7 @@
               </ul>
                 
                 <div class="my-2 my-lg-0 mr-3">  
-                  <a href="#" class="decoration-none">
+                  <a href="cart.jsp" class="decoration-none">
                       <i class="fas fa-shopping-cart"></i>
                       <span class="badge badge-light"><%= ProductDB.cart.getCart().size() %></span>
                   </a>

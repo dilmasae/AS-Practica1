@@ -32,4 +32,11 @@ public class ProductDB {
         return ProductDB.products;
     }
     
+    public static Product getProduct(int productId) {
+        for(Product product : products) {
+            if(product.getId() == productId) return product;
+        }
+        return null;
+    }
+    
 }
