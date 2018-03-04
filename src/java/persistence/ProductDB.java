@@ -49,15 +49,7 @@ public class ProductDB {
         products.add(new Product("https://images.pexels.com/photos/730919/christmas-tree-christmas-tree-decoration-730919.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb",
                 "Estrellas de navidad" , "lorem lorem lorem lorem", 3));
         
-        
-        
-        https://images.pexels.com/photos/533604/pexels-photo-533604.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb
-        
-        
-        /*products.add(new Product("http://via.placeholder.com/300X300", "Titulo " + i, "Texto "+ i, rand.nextInt(50) + 1));
-        products.add(new Product("http://via.placeholder.com/300X300", "Titulo " + i, "Texto "+ i, rand.nextInt(50) + 1));
-        products.add(new Product("http://via.placeholder.com/300X300", "Titulo " + i, "Texto "+ i, rand.nextInt(50) + 1));
-        */
+
         isReady = true;
         return ProductDB.products;
     }
