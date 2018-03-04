@@ -6,3 +6,9 @@ img {
 .carousel-item {
     height: 300px;
 }
+
+.decoration-none,
+.decoration-none:hover {
+    text-decoration: none;
+}
+
