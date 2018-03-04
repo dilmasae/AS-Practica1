@@ -5,16 +5,10 @@ import java.util.HashMap;
 
 public class Cart {
     
-    private final User user;
     private final HashMap<Product,Integer> cart;
 
-    public Cart(User user) {
-        this.user = user;
+    public Cart() {
         this.cart = new HashMap<>();
-    }
-
-    public User getUser() {
-        return user;
     }
 
     public HashMap<Product, Integer> getCart() {

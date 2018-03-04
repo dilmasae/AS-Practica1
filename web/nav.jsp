@@ -18,6 +18,7 @@
                 <div class="my-2 my-lg-0 mr-3">  
                   <a href="#">
                       <i class="fas fa-shopping-cart"></i>
+                      <span class="badge badge-light">9</span>
                   </a>
               </div>
               <div class="my-2 my-lg-0">
