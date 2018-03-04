@@ -12,3 +12,17 @@ img {
     text-decoration: none;
 }
 
+.auth {
+    position: relative;
+    height: calc(100vh - 60px); /* lo que mide el alto del dispositivo menos el tamaño de la cabecera nav.jsp */
+}
+
+.auth form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 320px;
+}
+
