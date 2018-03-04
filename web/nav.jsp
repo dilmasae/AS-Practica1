@@ -23,8 +23,11 @@
               <div class="my-2 my-lg-0">
                   
                   <% if (session.getAttribute("user") == null) { %>
-                    <a href="#">
+                    <a href="login.jsp">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">login</button>
+                    </a>
+                    <a href="#">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">registro</button>
                     </a>
                   <% } else { %>
                     <a href="#">
