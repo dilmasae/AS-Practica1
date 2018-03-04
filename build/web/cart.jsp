@@ -35,7 +35,9 @@
                         </div>
 
                         <div class="col-sm-2 d-flex">
-                            <i class="fas fa-trash align-self-center"></i>
+                            <% out.println("<a class='align-self-center' href='FrontServlet?command=cart.DeleteCartCommand&idProducto="+product.getId()+"'>"); %>
+                                <i class="fas fa-trash align-self-center"></i>
+                            <% out.println("</a>"); %>
                         </div>
                 
                     </div>
