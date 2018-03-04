@@ -19,11 +19,11 @@ public class UserDB {
         if(!users.contains(user)) users.add(user);
     }
     
-    public static boolean userExists(String email, String password) {
+    public static User getUser(String email, String password) {
         for(User user : users) {
-            if(user.getEmail().equals(email) && user.getPassword().equals(password)) return true;
+            if(user.getEmail().equals(email) && user.getPassword().equals(password)) return user;
         }
-        return false;
+        return null;
     }
     
 }
