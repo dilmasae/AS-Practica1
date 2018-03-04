@@ -4,13 +4,11 @@ package persistence;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import model.Cart;
 import model.Product;
 
 public class ProductDB {
     
     public static int productId = 1;
-    public static Cart cart = new Cart();
     public static List<Product> products = new ArrayList<>();
     public static boolean isReady = false;
     

@@ -5,6 +5,10 @@ import java.util.HashMap;
 
 public class Cart {
     
+    /*
+     * Primer Integer   => id del productor
+     * Segundo Integer  => cantidad
+    */
     private final HashMap<Integer,Integer> cart;
 
     public Cart() {

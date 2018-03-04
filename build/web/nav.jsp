@@ -1,3 +1,4 @@
+<%@page import="persistence.CartDB"%>
 <%@page import="persistence.ProductDB"%>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         
@@ -19,7 +20,7 @@
                 <div class="my-2 my-lg-0 mr-3">  
                   <a href="cart.jsp" class="decoration-none">
                       <i class="fas fa-shopping-cart"></i>
-                      <span class="badge badge-light"><%= ProductDB.cart.getCart().size() %></span>
+                      <span class="badge badge-light"><%= CartDB.cart.size() %></span>
                   </a>
               </div>
               <div class="my-2 my-lg-0">

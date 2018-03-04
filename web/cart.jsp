@@ -1,4 +1,5 @@
 
+<%@page import="persistence.CartDB"%>
 <%@page import="java.util.Map"%>
 <%@page import="model.Product"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -16,7 +17,7 @@
             
             <h2>Mi carrito</h2>
             
-            <% for(Map.Entry<Integer, Integer> item : ProductDB.cart.getCart().entrySet()) { %>
+            <% for(Map.Entry<Integer, Integer> item : CartDB.cart.entrySet()) { %>
                 
                 <% Product product = ProductDB.getProduct(item.getKey()); %>
             
