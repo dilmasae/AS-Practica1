@@ -15,7 +15,10 @@
             <form action="FrontServlet" method="POST">
 
                 <% if(request.getAttribute("message") != null) { %>
-                    <div class="alert alert-danger" role="alert">${message}</div>
+                    <div class="alert alert-success" role="alert">${message}</div>
+                <% }%>
+                <% if(request.getAttribute("error") != null) { %>
+                    <div class="alert alert-danger" role="alert">${error}</div>
                 <% }%>
                 
                 <div class="form-group">

@@ -31,7 +31,7 @@ public class LoginCommand extends FrontCommand {
              redirect("index.jsp");
         }
         else {
-            request.setAttribute("message", "Credenciales invalidas");
+            request.setAttribute("error", "Credenciales invalidas");
             forward("/login.jsp");
         }
         

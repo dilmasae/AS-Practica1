@@ -23,13 +23,14 @@ public class RegisterCommand extends FrontCommand {
         User user = new User(name, lastName, birthDate, email, password);
         
         // Si el usuario no existe lo añadimos a la lista de usuarios
-        if(UserDB.getUser(email, password) == null) {
+        if(!UserDB.isEmailExist(email)) {
             UserDB.add(user);
-            redirect("/login.jsp");
+            request.setAttribute("message", "Usuario creado correctamente ...");
+            forward("/login.jsp");
         }
         else {
-            request.setAttribute("message", "El usuario ya existe");
-            redirect("/register.jsp");
+            request.setAttribute("error", "El email ya existe");
+            forward("/register.jsp");
         }
         
     }

@@ -29,4 +29,11 @@ public class UserDB {
         return null;
     }
     
+    public static boolean isEmailExist(String email){
+        for(User user : users) {
+            if(user.getEmail().equals(email)) return true;
+        }
+        return false;
+    }
+    
 }
