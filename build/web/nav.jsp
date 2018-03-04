@@ -25,7 +25,7 @@
               </div>
               <div class="my-2 my-lg-0">
                   
-                  <% if (session.getAttribute("user") == null) { %>
+                  <% if(session.getAttribute("user") == null) { %>
                     <a href="login.jsp">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">login</button>
                     </a>
@@ -33,8 +33,8 @@
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">registro</button>
                     </a>
                   <% } else { %>
-                    <a href="#">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">log out</button>
+                    <a href="FrontServlet?command=auth.LogOutCommand">
+                        <button class="btn btn-outline-success my-2 my-sm-0">log out</button>
                     </a>
                   <% }%>
                   

@@ -34,7 +34,7 @@ public class LogOutCommand extends FrontCommand {
             
         }
         
-        redirect("/index.jsp");
+        redirect("index.jsp");
     }
     
 }
