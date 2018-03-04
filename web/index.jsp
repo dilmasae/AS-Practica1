@@ -1,6 +1,8 @@
 <%-- 
     Author     : Edilma Alvarado
 --%>
+<%@page import="model.Product"%>
+<%@page import="persistence.ProductDB"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
@@ -21,13 +23,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img class="d-block w-100" src="http://www.lorempixel.com/1400/500" alt="First slide">
+                      <img class="d-block w-100" src="http://via.placeholder.com/1500X500" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="http://www.lorempixel.com/1400/500" alt="Second slide">
+                    <img class="d-block w-100" src="http://via.placeholder.com/1500X500" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="http://www.lorempixel.com/1400/500" alt="Third slide">
+                    <img class="d-block w-100" src="http://via.placeholder.com/1500X500" alt="Third slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -45,42 +47,18 @@
           
           <div class="row">
               
+              <% for(Product product : ProductDB.getProducts()) { %>
+              
               <div class="col-sm-4 mt-2">
                   <jsp:include page='product.jsp'>
-                        <jsp:param name="img" value="http://www.lorempixel.com/300/300"/>
-                        <jsp:param name="title" value="Card title 1"/>
-                        <jsp:param name="text" value="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-                        <jsp:param name="price" value="5"/>
-                  </jsp:include>
-              </div>
-            
-              
-              <div class="col-sm-4 mt-2">
-                    <jsp:include page='product.jsp'>
-                        <jsp:param name="img" value="http://www.lorempixel.com/300/300"/>
-                        <jsp:param name="title" value="Card title 2"/>
-                        <jsp:param name="text" value="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-                        <jsp:param name="price" value="10"/>
+                        <jsp:param name="img" value="<%= product.getImg() %>"/>
+                        <jsp:param name="title" value="<%= product.getTitle() %>"/>
+                        <jsp:param name="text" value="<%= product.getText() %>"/>
+                        <jsp:param name="price" value="<%= product.getPrice() %>"/>
                   </jsp:include>
               </div>
               
-              <div class="col-sm-4 mt-2">
-                    <jsp:include page='product.jsp'>
-                        <jsp:param name="img" value="http://www.lorempixel.com/300/300"/>
-                        <jsp:param name="title" value="Card title 3"/>
-                        <jsp:param name="text" value="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-                        <jsp:param name="price" value="45"/>
-                  </jsp:include>
-              </div>
-              
-              <div class="col-sm-4 mt-2">
-                    <jsp:include page='product.jsp'>
-                        <jsp:param name="img" value="http://www.lorempixel.com/300/300"/>
-                        <jsp:param name="title" value="Card title"/>
-                        <jsp:param name="text" value="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-                        <jsp:param name="price" value="10"/>
-                    </jsp:include>
-              </div>
+              <% } %>
               
           </div>
           

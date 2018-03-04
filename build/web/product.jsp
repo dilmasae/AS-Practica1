@@ -1,7 +1,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
+<% String img = request.getParameter("img"); %>
+
 <article class="card">
-    <img class="card-img-top" src="http://www.lorempixel.com/300/300" alt="producto 1">
+    
+    <% out.println("<img class='card-img-top' src="+img+" alt='producto 1'>"); %>
+    
     <div class="card-body">
       <h5 class="card-title"><% out.print(request.getParameter("title")); %></h5>
       <p class="card-text"><% out.print(request.getParameter("text")); %></p>
