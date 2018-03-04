@@ -20,15 +20,7 @@
             <% for(Map.Entry<Integer, Integer> item : CartDB.cart.getCart().entrySet()) { %>
                 
                 <% Product product = ProductDB.getProduct(item.getKey()); %>
-            
-                <article>
-                    <div>
-                        
-                    </div>
-                    <div></div>
-                    <div></div>
-                </article>
-                    
+                
                     <div class="row mt-2">
             
                         <div class="col-sm-3 col-md-2 cart-img">
@@ -36,8 +28,10 @@
                         </div>
 
                         <div class="col-sm-7 col-md-8 d-flex flex-wrap align-content-center">
-                            <h3 class="w-100 m-0">Titulo</h3>
-                            <p class="w-100 m-0">asasas</p>
+                            <h3 class="w-100 m-0"><%= product.getTitle() %></h3>
+                            <p class="w-100 m-0"><%= product.getText() %></p>
+                            <p class="w-100 m-0">Cantidad: <%= item.getValue() %></p>
+                            <p class="w-100 m-0"><%= product.getPrice() %> €</p>
                         </div>
 
                         <div class="col-sm-2 d-flex">
