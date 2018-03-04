@@ -5,6 +5,7 @@ import frontcontroller.FrontCommand;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpSession;
 import model.User;
+import persistence.CartDB;
 
 
 public class LogOutCommand extends FrontCommand {
@@ -33,6 +34,9 @@ public class LogOutCommand extends FrontCommand {
             session.invalidate();
             
         }
+        
+        // Borrar el carrito
+        CartDB.cart.clear();
         
         redirect("index.jsp");
     }

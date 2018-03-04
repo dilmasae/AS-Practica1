@@ -20,7 +20,7 @@ public class LoginCommand extends FrontCommand {
         if(user != null) {
              HttpSession session = request.getSession();
              
-             int expireTime = 30 * 60;
+             int expireTime = 86400; // un dia en segundos
              session.setMaxInactiveInterval(expireTime);
              
              session.setAttribute("user", user);
