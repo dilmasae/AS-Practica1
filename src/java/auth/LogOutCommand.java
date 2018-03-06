@@ -15,12 +15,16 @@ public class LogOutCommand extends FrontCommand {
         
         if(session != null){
             User user = (User) session.getAttribute(USER_KEY);    
-            session.invalidate();
             
             // Borrar el carrito
             Cart cart = (Cart) session.getAttribute(CART_KEY);
             
-            if(cart != null) cart.clear();
+            if(cart != null) {
+                cart.clear();
+                session.setAttribute(CART_KEY, cart);
+            }
+            
+            session.invalidate();
         }
         
         redirect("index.jsp");
