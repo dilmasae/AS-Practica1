@@ -16,7 +16,11 @@ public class AddCartCommand extends FrontCommand {
         Cart cart = (Cart) session.getAttribute(CART_KEY);
         
         if(cart != null) cart.addProduct(Integer.parseInt(idProduct));
-        else session.setAttribute(CART_KEY, new Cart());
+        else {
+            Cart newCart = new Cart();
+            newCart.addProduct(Integer.parseInt(idProduct));
+            session.setAttribute(CART_KEY, newCart);
+        }
         
         redirect("index.jsp");
     }
