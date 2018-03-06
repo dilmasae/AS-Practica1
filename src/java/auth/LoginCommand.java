@@ -21,7 +21,7 @@ public class LoginCommand extends FrontCommand {
              
              int expireTime = 86400; // un dia en segundos
              session.setMaxInactiveInterval(expireTime);
-             session.setAttribute("user", user);
+             session.setAttribute(USER_KEY, user);
              
              redirect("index.jsp");
         }

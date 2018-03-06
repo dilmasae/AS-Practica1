@@ -12,6 +12,9 @@ public abstract class FrontCommand {
     protected HttpServletRequest request;
     protected HttpServletResponse response;
     
+    protected final String USER_KEY = "user";
+    protected final String CART_KEY = "cart";
+    
     public void init(ServletContext context, HttpServletRequest request, HttpServletResponse response) {
         this.context = context;
         this.request = request;

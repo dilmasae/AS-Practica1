@@ -3,8 +3,8 @@ package auth;
 
 import frontcontroller.FrontCommand;
 import javax.servlet.http.HttpSession;
+import model.Cart;
 import model.User;
-import persistence.CartDB;
 
 
 public class LogOutCommand extends FrontCommand {
@@ -14,12 +14,14 @@ public class LogOutCommand extends FrontCommand {
         HttpSession session = request.getSession(false);
         
         if(session != null){
-            User user = (User) session.getAttribute("user");    
+            User user = (User) session.getAttribute(USER_KEY);    
             session.invalidate();
         }
         
         // Borrar el carrito
-        CartDB.cart.clear();
+        Cart cart = (Cart) session.getAttribute(CART_KEY);
+        
+        if(cart != null) cart.clear();
         
         redirect("index.jsp");
     }

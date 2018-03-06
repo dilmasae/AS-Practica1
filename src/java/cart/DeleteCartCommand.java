@@ -2,7 +2,8 @@
 package cart;
 
 import frontcontroller.FrontCommand;
-import persistence.CartDB;
+import javax.servlet.http.HttpSession;
+import model.Cart;
 
 public class DeleteCartCommand extends FrontCommand {
 
@@ -10,7 +11,12 @@ public class DeleteCartCommand extends FrontCommand {
     public void process() {
         String idProduct = request.getParameter("idProducto");
         
-        CartDB.cart.deleteProduct(Integer.parseInt(idProduct));
+        HttpSession session = request.getSession();
+        
+        Cart cart = (Cart) session.getAttribute(CART_KEY);
+        
+        if(cart != null) cart.deleteProduct(Integer.parseInt(idProduct));
+        
         redirect("cart.jsp");
     }
     
