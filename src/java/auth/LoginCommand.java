@@ -2,7 +2,6 @@
 package auth;
 
 import frontcontroller.FrontCommand;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpSession;
 import model.User;
 import persistence.UserDB;
@@ -22,12 +21,8 @@ public class LoginCommand extends FrontCommand {
              
              int expireTime = 86400; // un dia en segundos
              session.setMaxInactiveInterval(expireTime);
-             
              session.setAttribute("user", user);
-             Cookie cookieUser = new Cookie("user", user.getEmail());
-             cookieUser.setMaxAge(expireTime);
              
-             response.addCookie(cookieUser);
              redirect("index.jsp");
         }
         else {

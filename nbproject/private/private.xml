@@ -3,8 +3,28 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/ProyectosDeProgramacion/netBeans/Manualidades/web/index.jsp</file>
-            <file>file:/D:/ProyectosDeProgramacion/netBeans/Manualidades/src/java/servlet/FrontServlet.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/cart/DeleteCartCommand.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/auth/RegisterCommand.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/persistence/UserDB.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/web/cart.jsp</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/auth/LogOutCommand.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/model/User.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/web/head.jsp</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/web/product.jsp</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/persistence/CartDB.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/persistence/ProductDB.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/frontcontroller/FrontCommand.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/auth/LoginCommand.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/frontcontroller/UnknownCommand.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/web/scripts.jsp</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/model/Product.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/model/Cart.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/web/login.jsp</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/web/index.jsp</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/servlet/FrontServlet.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/src/java/cart/AddCartCommand.java</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/web/register.jsp</file>
+            <file>file:/Users/dilmasae/projects/AS-Practica1/web/footer.jsp</file>
         </group>
     </open-files>
 </project-private>

@@ -23,7 +23,7 @@ public abstract class FrontCommand {
         try {
             dispatcher.forward(request, response);
         } catch (IOException | ServletException exception) {
-            //TODO: redirect status code 500
+            
         }
     }
     
@@ -31,7 +31,6 @@ public abstract class FrontCommand {
         try {
             response.sendRedirect(target);
         } catch (IOException exception) {
-            //TODO: redirect status code 500
         }
     }
     
